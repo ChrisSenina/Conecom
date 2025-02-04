@@ -1,10 +1,10 @@
 mixin intro()
   section.intro
    .intro__container
+    .intro__background
+     +pictureVp("content", "intro", "jpg", 610, 314, 610, 314, 930, 599, 1250, 599, "Процесс по производству дрожжей")
+    .intro__logo-svg
+     +icon("icon-logo", 267, 103)
     .intro__wrapper
-     .intro__background
-      +picture("content", "intro", "jpg", 1250, 599, "Процесс по производству дрожжей")
-     .intro__logo-svg
-      +icon("icon-logo", 267, 103)
      h1.intro__title Conecom
-     p.intro__description российское подразделение французской группы DuffBeer
+     p.intro__description российское подразделение французской <br> группы DuffBeer
