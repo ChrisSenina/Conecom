@@ -1,18 +1,17 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2");
-// }
-
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "Lato", sans-serif;
 
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../fonts/lato-regular-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+
+  font-display: swap;
+  src: url("../fonts/lato-bold-700.woff2") format("woff2");
 }
