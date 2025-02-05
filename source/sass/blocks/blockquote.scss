@@ -107,6 +107,7 @@
     font-weight: 400;
     line-height: 32px;
     color: $color-default-white;
+    letter-spacing: 0.28px;
 
     @include vp-M {
       padding-right: 180px;
@@ -114,15 +115,16 @@
 
     @include vp-S {
       font-family: $ff-arial;
-      font-size: 16px;
+      font-size: 15.5px;
       line-height: 20px;
-      padding-right: 130px;
+      padding-right: 127px;
       margin-top: -5px;
+      z-index: 1;
     }
 
     @include vp-XS {
       padding-right: 40px;
-      margin-top: 0;
+      margin: -1px 0 1px;
     }
   }
 }
