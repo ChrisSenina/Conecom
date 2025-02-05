@@ -1,0 +1,41 @@
+.accordion {
+  &__content {
+    overflow: hidden;
+    max-height: 317px;
+
+    &.is-opened {
+      transition: $trans-default;
+    }
+  }
+
+  &__content.is-opened &__heading {
+    visibility: hidden;
+  }
+
+  &__content.is-opened &__description {
+    visibility: visible;
+  }
+
+  &__content.is-opened &__input {
+    transform: rotate(45deg);
+  }
+
+  &__description {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    background-color: $color-smalt;
+    padding: 20px;
+    top: 0;
+    min-height: 179px;
+
+    @include vp-S {
+      min-height: 100%;
+    }
+  }
+
+  &__input {
+    z-index: 2;
+    transition: transform $trans-default;
+  }
+}

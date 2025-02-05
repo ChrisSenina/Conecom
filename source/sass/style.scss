@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -23,6 +23,8 @@
 @import "blocks/about.scss";
 @import "blocks/blockquote.scss";
 @import "blocks/mission.scss";
+@import "blocks/advantages.scss";
+@import "blocks/accordion.scss";
 // @import "blocks/header";
 // @import "blocks/main-nav";
 // @import "blocks/footer";
