@@ -37,7 +37,7 @@
     gap: 40px;
 
     @include vp-M {
-      gap: 15px;
+      gap: 14px;
     }
 
     @include vp-S {
@@ -52,7 +52,7 @@
   &__video {
     position: relative;
     padding: 37px 0 0 60px;
-    width: fit-content;
+    width: 605px;
 
     &::before {
       content: "";
@@ -79,8 +79,8 @@
       }
 
       @include vp-XS {
-        width: 250px;
-        height: 184px;
+        width: 96%;
+        height: 105.4%;
         left: -14px;
       }
     }
@@ -92,28 +92,122 @@
     }
 
     @include vp-S {
-      padding: 46px 0 0 29px;
-      width: 569.5px;
-      height: 409px;
+      padding: 47.5px 0 57% 29px;
+      width: 100%;
+      height: auto;
       grid-row: 2;
     }
 
     @include vp-XS {
-      padding: 25px 0 0;
-      width: 260px;
-      height: 174px;
+      padding: 25px 0 57%;
+      width: 99.4%;
+      height: auto;
+    }
+
+    iframe {
+      position: absolute;
+      top: 36px;
+      left: 58px;
+      width: 90.9%;
+      height: 87.8%;
+      border: none;
+
+      @include vp-M {
+        width: 90.9%;
+        height: 99.8%;
+        top: 60px;
+        left: 41px;
+      }
+
+      @include vp-S {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 541px;
+        height: 362px;
+      }
+
+      @include vp-XS {
+        position: absolute;
+        width: 99.4%;
+        height: 100%;
+        top: 25px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 0;
+  }
+
+  &__button {
+    display: block;
+    box-sizing: border-box;
+    width: 66px;
+    height: 44px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(8, 8, 9, 0.7);
+    position: absolute;
+    top: 47%;
+    left: 48.5%;
+
+    @include vp-M {
+      width: 50px;
+      height: 32px;
+      top: 65.7%;
+      left: 47.8%;
+      border-radius: 8px;
+    }
+
+    @include vp-S {
+      width: 67px;
+      height: 44px;
+      top: 55%;
+      left: 45.5%;
+    }
+
+    @include vp-XS {
+      width: 12%;
+      height: 12.5%;
+      top: 58%;
+      left: 42.5%;
+      border-radius: 5px;
+    }
+
+    svg {
+      @include vp-M {
+        width: 12px;
+        height: 14px;
+        top: 9%;
+        left: 2%;
+        position: relative;
+      }
+
+      @include vp-S {
+        width: 17px;
+        height: 19px;
+      }
+
+      @include vp-XS {
+        width: 45%;
+        height: 50%;
+        top: 3%;
+        left: 5%;
+      }
     }
   }
 
   &__title {
     margin: 0;
-    padding: 0 0 31px;
+    padding: 0 0 31px 1px;
     font-family: $ff-lato;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.5px;
     color: $color-smalt;
     display: flex;
     flex-direction: column;
