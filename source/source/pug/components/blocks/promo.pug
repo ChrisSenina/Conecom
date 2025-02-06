@@ -1,0 +1,31 @@
+mixin promo()
+  section.promo
+    .promo__container
+      h2.promo__title DuffBeer
+      p.promo__description Ключевой мировой игрок в области ферментации
+      .promo__slider
+        ul.promo__list
+          li.promo__item.promo__item-employees
+            +pictureVp3("content", "employees", "jpg", 699, 294, 454, 294, 565, 294, "Сотрудники на совещании в офисе")
+            p.promo__text 10 700+ сотрудников
+          li.promo__item.promo__item-expert
+            +pictureVp3("content", "expert", "jpg", 699, 294, 294, 240, 294, 240, "Девушка-эксперт в облатси исследования и разработки")
+            p.promo__text 570 экспертов R&amp;D
+          li.promo__item.promo__item-experience
+            p.promo__number 167
+            p.promo__text лет опыта <br> на рынке хлебопечения
+          li.promo__item.promo__item-field
+            +pictureVp2("content", "field", "jpg", 699, 350, 565, 294, "Ржаное поле")
+            p.promo__text 25+ лет в России
+          li.promo__item.promo__item-branch
+            +pictureVp2("content", "branch", "jpg", 699, 350, 565, 294, "Филиал")
+            p.promo__text Филиалы в 50 странах
+          li.promo__item.promo__item-number
+            p.promo__number 4
+            p.promo__text направления деятельности
+      .promo__navigation.navigation
+        button.promo__button.promo__button-prev.navigation__button.navigation__button-prev(type="button" aria-label="Пролистать назад")
+          +icon("icon-arrow", 10, 10)
+        button.promo__button.promo__button-next.navigation__button.navigation__button-next(type="button" aria-label="Пролистать вперёд")
+          +icon("icon-arrow", 10, 10)
+      .promo__pagination

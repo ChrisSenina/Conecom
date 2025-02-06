@@ -1,0 +1,197 @@
+.mission {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1250px;
+  min-height: 437px;
+
+  @include vp-M {
+    max-width: 930px;
+    min-height: 461px;
+  }
+
+  @include vp-S {
+    max-width: 610px;
+    min-height: 275px;
+  }
+
+  @include vp-XS {
+    max-width: 699px;
+    margin: 0 5px;
+  }
+
+  &__background {
+    position: absolute;
+    z-index: -1;
+    min-height: fit-content;
+
+    img {
+      @include vp-XS {
+        height: 275px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__content {
+    padding: 80px 0;
+    text-align: center;
+    color: $color-default-white;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: fit-content;
+
+    @include vp-M {
+      padding: 84px 0;
+    }
+
+    @include vp-S {
+      padding: 55px 0;
+    }
+
+    @include vp-XS {
+      padding: 26px 0;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: $ff-lato;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 80px;
+
+    @include vp-S {
+      font-size: 30px;
+      line-height: 46px;
+    }
+
+    @include vp-XS {
+      max-width: 290px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 66px;
+      height: 4px;
+      background-color: $color-default-white;
+      top: 47%;
+
+      @include vp-S {
+        width: 15px;
+        height: 1px;
+      }
+
+      @include vp-XS {
+        top: 49%;
+      }
+    }
+
+    &::after {
+      left: 13.1%;
+
+      @include vp-M {
+        left: 15.5%;
+      }
+
+      @include vp-XS {
+        left: 9%;
+      }
+    }
+
+    &::before {
+      right: 13.1%;
+
+      @include vp-M {
+        right: 15.5%;
+      }
+
+      @include vp-XS {
+        right: 9%;
+      }
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding: 40px 0 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+
+    @include vp-M {
+      line-height: 32px;
+      padding: 32px 173px 0 168px;
+    }
+
+    @include vp-S {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 22px 108px 0 103px;
+    }
+
+    @include vp-XS {
+      padding: 6px 12px 0 6px;
+    }
+
+    br {
+      display: none;
+
+      @include vp-XS {
+        display: block;
+      }
+    }
+  }
+
+  &__button {
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 40px;
+    min-width: 283px;
+    background-color: $color-default-white;
+    color: $color-smalt;
+    font-family: $ff-arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: none;
+    cursor: pointer;
+    transition: opacity $trans-default;
+
+    @include vp-M {
+      margin: 32px 0 0;
+    }
+
+    @include vp-S {
+      min-width: 171px;
+      margin: 9px 0 0;
+      padding: 10px 20px;
+      font-size: 14px;
+      line-height: 28px;
+    }
+
+    @include vp-XS {
+      min-width: 197px;
+      font-size: 18px;
+      margin: 29px 0 0;
+    }
+
+    @include hover-focus {
+      outline: none;
+      opacity: 0.7;
+    }
+
+    &:active {
+      background-color: $color-smalt;
+      color: $color-default-white;
+    }
+  }
+}

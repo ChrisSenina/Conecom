@@ -1,0 +1,130 @@
+.blockquote {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1250px;
+
+  @include vp-M {
+    max-width: 930px;
+  }
+
+  @include vp-S {
+    max-width: 610px;
+  }
+
+  @include vp-XS {
+    min-width: 290px;
+    max-width: 699px;
+    margin: 0 5px;
+  }
+
+  &__container {
+    padding: 96px 0 92px 60px;
+    position: relative;
+    background: $color-smalt;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: image-set(url("../img/raster/quotes-decor.webp") 1x,
+          url("../img/raster/quotes-decor@2x.webp") 2x,
+          url("../img/raster/quotes-decor.png") 1x,
+          url("../img/raster/quotes-decor@2x.png") 2x,
+        );
+      background-repeat: no-repeat;
+      width: 437px;
+      height: 173px;
+      right: 0;
+      top: 79px;
+
+      @include vp-M {
+        right: -280px;
+        top: 76px;
+      }
+
+      @include vp-S {
+        background-image: image-set(url("../img/raster/quotes-decor-mob.webp") 1x,
+            url("../img/raster/quotes-decor-mob@2x.webp") 2x,
+            url("../img/raster/quotes-decor-mob.png") 1x,
+            url("../img/raster/quotes-decor-mob@2x.png") 2x,
+          );
+        width: 179px;
+        height: 132px;
+        right: -2px;
+        top: 7px;
+      }
+
+      @include vp-XS {
+        right: -55px;
+        top: 78px;
+      }
+    }
+
+    @include vp-M {
+      padding-left: 40px;
+      overflow: hidden;
+    }
+
+    @include vp-S {
+      padding: 38px 0 31px 20px;
+    }
+
+    @include vp-XS {
+      padding: 34px 0 30px 14px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    gap: 26px;
+
+    @include vp-M {
+      gap: 41px;
+    }
+
+    @include vp-S {
+      gap: 20px;
+    }
+
+    @include vp-XS {
+      gap: 15px;
+    }
+
+    svg {
+      @include vp-S {
+        width: 22px;
+        height: 28px;
+      }
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0 300px 0 0;
+    font-family: $ff-lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $color-default-white;
+    letter-spacing: 0.28px;
+
+    @include vp-M {
+      padding-right: 180px;
+    }
+
+    @include vp-S {
+      font-family: $ff-arial;
+      font-size: 15.5px;
+      line-height: 20px;
+      padding-right: 127px;
+      margin-top: -5px;
+      z-index: 1;
+    }
+
+    @include vp-XS {
+      padding-right: 40px;
+      margin: -1px 0 1px;
+    }
+  }
+}

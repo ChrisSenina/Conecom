@@ -1,0 +1,137 @@
+.intro {
+  margin: 0 auto;
+  max-width: 1250px;
+  min-height: 599px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: image-set(url("../img/raster/intro-decor.webp") 1x,
+        url("../img/raster/intro-decor@2x.webp") 2x,
+        url("../img/raster/intro-decor.png") 1x,
+        url("../img/raster/intro-decor@2x.png") 2x,
+      );
+    background-repeat: no-repeat;
+    width: 363px;
+    height: 368px;
+    bottom: -98px;
+    right: 0;
+
+    @include vp-M {
+      display: none;
+    }
+  }
+
+  @include vp-M {
+    max-width: 930px;
+  }
+
+  @include vp-S {
+    max-width: 610px;
+    min-height: 314px;
+  }
+
+  @include vp-XS {
+    max-width: 699px;
+    min-width: 300px;
+  }
+
+  &__background {
+    position: absolute;
+    z-index: -1;
+    min-height: fit-content;
+
+    img {
+      @include vp-XS {
+        max-width: 96%;
+        margin: 0 auto;
+        height: 352px;
+        object-fit: cover;
+      }
+    }
+
+    @include vp-XS {
+      min-width: 300px;
+      width: 100%;
+    }
+  }
+
+  &__logo-svg {
+    width: fit-content;
+    padding-left: 60px;
+
+    @include vp-S {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    svg {
+      @include vp-S {
+        width: 167px;
+        height: 64px;
+      }
+    }
+  }
+
+  &__wrapper {
+    padding: 109px 60px 60px;
+    width: fit-content;
+
+    @include vp-M {
+      padding: 128px 40px 60px;
+    }
+
+    @include vp-S {
+      margin: 0 auto;
+      padding: 48px 0 60px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: $color-default-white;
+
+    @include vp-S {
+      font-size: 36px;
+      line-height: 40px;
+    }
+
+    @include vp-XS {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    padding: 15px 0 0;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    color: $color-default-white;
+
+    br {
+      @include vp-XS {
+        display: none;
+      }
+    }
+
+    @include vp-M {
+      padding-top: 28px;
+    }
+
+    @include vp-S {
+      padding: 21.3px 20px 0;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

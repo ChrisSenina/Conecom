@@ -1,0 +1,27 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+// Swiper 8.4.7
+@import "vendor/swiper";
+
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/intro.scss";
+@import "blocks/about.scss";
+@import "blocks/blockquote.scss";
+@import "blocks/mission.scss";
+@import "blocks/advantages.scss";
+@import "blocks/accordion.scss";
+@import "blocks/navigation.scss";
+@import "blocks/promo.scss";
