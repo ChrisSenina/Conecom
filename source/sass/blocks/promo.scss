@@ -173,7 +173,7 @@
       }
 
       @include vp-XS {
-        max-height: 370px;
+        max-height: 354px;
         object-fit: cover;
         width: 100%;
       }
@@ -183,7 +183,10 @@
   &__item-field img,
   &__item-branch img {
     @include vp-XS {
-      max-height: 315px;
+      max-height: 300px;
+    }
+
+    @media (min-height: 360px) {
       height: 100%;
     }
   }
