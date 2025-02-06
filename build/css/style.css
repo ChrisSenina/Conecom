@@ -2163,6 +2163,13 @@ button,
   }
 }
 
+@media (min-width: 1020px) {
+  .advantages__heading {
+    font-size: 18px;
+    min-height: unset;
+  }
+}
+
 @media (max-width: 1339px) {
   .intro::before {
     display: none;
