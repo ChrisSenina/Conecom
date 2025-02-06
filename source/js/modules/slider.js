@@ -55,6 +55,7 @@ export function initSliderAdv() {
         breakpoints: {
           300: {
             slidesPerView: 1,
+            spaceBetween: 10,
           },
 
           700: {
@@ -131,6 +132,7 @@ export function initSliderPromo() {
         breakpoints: {
           300: {
             slidesPerView: 1,
+            spaceBetween: 10,
           },
 
           700: {
