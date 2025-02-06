@@ -2942,7 +2942,7 @@ button,
   }
 
   .promo__item img {
-    max-height: 370px;
+    max-height: 354px;
     -o-object-fit: cover;
     object-fit: cover;
     width: 100%;
@@ -2950,8 +2950,7 @@ button,
 
   .promo__item-field img,
   .promo__item-branch img {
-    max-height: 315px;
-    height: 100%;
+    max-height: 300px;
   }
 
   .promo__item-employees .promo__text,
@@ -2994,5 +2993,12 @@ button,
 
   .advantages__toggle:hover:not(.focus-visible) {
     opacity: 0.7;
+  }
+}
+
+@media (min-height: 360px) {
+  .promo__item-field img,
+  .promo__item-branch img {
+    height: 100%;
   }
 }
