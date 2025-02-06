@@ -55,19 +55,16 @@ export function initSliderAdv() {
         breakpoints: {
           300: {
             slidesPerView: 1,
-            slidesPerGroup: 1,
           },
 
           700: {
             slidesPerView: 2,
             spaceBetween: 25,
             width: 545,
-            slidesPerGroup: 2,
           },
         },
-
-
       });
+      swiper.init();
     } else {
       slider.classList.remove('swiper');
       wrapper.classList.remove('swiper-wrapper');
@@ -134,19 +131,16 @@ export function initSliderPromo() {
         breakpoints: {
           300: {
             slidesPerView: 1,
-            slidesPerGroup: 1,
           },
 
           700: {
             slidesPerView: 2,
             spaceBetween: 25,
             width: 545,
-            slidesPerGroup: 2,
           },
         },
-
-
       });
+      swiper.init();
     } else {
       slider.classList.remove('swiper');
       wrapper.classList.remove('swiper-wrapper');

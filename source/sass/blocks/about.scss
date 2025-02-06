@@ -240,6 +240,10 @@
       }
     }
 
+    @include vp-M {
+      font-size: 17.5px;
+    }
+
     @include vp-S {
       padding: 0 0 14px;
       font-size: 8.4px;

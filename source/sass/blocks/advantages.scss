@@ -13,6 +13,7 @@
 
   @include vp-XS {
     max-width: 699px;
+    margin: 0 5px;
   }
 
   &__container {
@@ -28,7 +29,7 @@
     }
 
     @include vp-XS {
-      padding-top: 50px;
+      padding: 50px 16px 0 14px;
     }
   }
 
@@ -145,6 +146,10 @@
 
     @include vp-S {
       bottom: 21px;
+    }
+
+    @include hover-focus {
+      opacity: 0.7;
     }
   }
 

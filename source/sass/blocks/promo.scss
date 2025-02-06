@@ -12,9 +12,8 @@
   }
 
   @include vp-XS {
-    min-width: 300px;
     max-width: 699px;
-    margin: 0;
+    margin: 0 5px;
   }
 
   &__container {
@@ -31,7 +30,7 @@
     }
 
     @include vp-XS {
-      padding: 60px 19px 63px;
+      padding: 60px 16px 63px 14px;
     }
 
     &::before {
@@ -74,7 +73,7 @@
           );
         width: 106px;
         height: 95px;
-        right: 5px;
+        right: 0;
         top: 82%;
       }
     }
@@ -184,7 +183,6 @@
 
   &__item-field img,
   &__item-branch img {
-
     @include vp-XS {
       max-height: 376px;
     }

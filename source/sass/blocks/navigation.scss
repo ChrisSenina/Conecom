@@ -1,11 +1,9 @@
-.slider {
+.navigation {
 
-  &__navigation {
-    display: none;
+  display: none;
 
-    @include vp-S {
-      display: block;
-    }
+  @include vp-S {
+    display: block;
   }
 
   &__button {
@@ -15,10 +13,6 @@
 
     &-prev {
       left: -6px;
-
-      @include vp-XS {
-        left: 0;
-      }
     }
 
     &-next {
@@ -26,7 +20,7 @@
       right: -2px;
 
       @include vp-XS {
-        right: 0;
+        right: -4px;
       }
     }
   }

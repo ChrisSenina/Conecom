@@ -3,7 +3,7 @@ mixin promo()
   .promo__container
    h2.promo__title DuffBeer
    p.promo__description Ключевой мировой игрок в области ферментации
-   .promo__slider.slider
+   .promo__slider
     ul.promo__list
      li.promo__item.promo__item-employees
       +pictureVp3("content", "employees", "jpg", 260, 294, 454, 294, 565, 294, "Сотрудники на совещании в офисе")
@@ -23,9 +23,9 @@ mixin promo()
      li.promo__item.promo__item-number
       p.promo__number 4
       p.promo__text направления деятельности
-   .promo__navigation.slider__navigation
-     button(type="button", aria-label="Пролистать назад").promo__button.promo__button-prev.slider__button.slider__button-prev
+   .promo__navigation.navigation
+     button(type="button", aria-label="Пролистать назад").promo__button.promo__button-prev.navigation__button.navigation__button-prev
       +icon("icon-arrow", 10, 10)
-     button(type="button", aria-label="Пролистать вперёд").promo__button.promo__button-next.slider__button.slider__button-next
+     button(type="button", aria-label="Пролистать вперёд").promo__button.promo__button-next.navigation__button.navigation__button-next
       +icon("icon-arrow", 10, 10)
-   .promo__pagination.slider__pagination
+   .promo__pagination
