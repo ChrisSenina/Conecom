@@ -163,39 +163,25 @@
   }
 
   &__button {
-    position: absolute;
-    background: $color-transparent;
-    border: none;
     bottom: 36.5%;
 
     @include vp-XS {
       bottom: 37.5%;
     }
-
-    &-prev {
-      left: -6px;
-
-      @include vp-XS {
-        left: 0;
-      }
-    }
-
-    &-next {
-      transform: rotate(180deg);
-      right: -2px;
-
-      @include vp-XS {
-        right: 0;
-      }
-    }
   }
 
   &__pagination {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    width: 65px;
-    margin: 0 auto;
+    display: none;
+
+    @include vp-S {
+
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      width: 112px;
+      margin: 0 auto;
+    }
   }
 
   &__pagination-bullet {
@@ -206,13 +192,7 @@
     border-radius: 50%;
   }
 
-  // &__pagination-bullet:nth-child(9n + 7),
-  // &__pagination-bullet:nth-child(9n + 8),
-  // &__pagination-bullet:nth-child(9n + 9) {
-  //   display: none;
-  // }
-
   &__pagination-bullet-active {
-    background: $color-smalt;
+    background-color: $color-smalt;
   }
 }

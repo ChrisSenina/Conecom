@@ -1,0 +1,33 @@
+.slider {
+
+  &__navigation {
+    display: none;
+
+    @include vp-S {
+      display: block;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    background: $color-transparent;
+    border: none;
+
+    &-prev {
+      left: -6px;
+
+      @include vp-XS {
+        left: 0;
+      }
+    }
+
+    &-next {
+      transform: rotate(180deg);
+      right: -2px;
+
+      @include vp-XS {
+        right: 0;
+      }
+    }
+  }
+}

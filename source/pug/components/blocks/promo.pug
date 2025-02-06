@@ -1,25 +1,31 @@
 mixin promo()
  section.promo
   .promo__container
-   .promo__wrapper
-    h2.promo__title DuffBeer
-    p.promo__description Ключевой мировой игрок в области ферментации
+   h2.promo__title DuffBeer
+   p.promo__description Ключевой мировой игрок в области ферментации
+   .promo__slider.slider
     ul.promo__list
-     li.promo__item
-      +picture("content", "employees", 565, 294, "Сотрудники на совещании в офисе")
+     li.promo__item.promo__item-employees
+      +pictureVp3("content", "employees", "jpg", 260, 294, 454, 294, 565, 294, "Сотрудники на совещании в офисе")
       p.promo__text 10 700+ сотрудников
-     li.promo__item
-      +picture("content", "expert", 294, 240, "Девушка-эксперт в облатси исследования и разработки")
+     li.promo__item.promo__item-expert
+      +pictureVp3("content", "expert", "jpg", 260, 294, 294, 240, 294, 240, "Девушка-эксперт в облатси исследования и разработки")
       p.promo__text 570 экспертов R&amp;D
-     li.promo__item
-      span.promo__number 167
-      p.promo__text лет опыта на рынке хлебопечения
-     li.promo__item
-      +picture("content", "field", 565, 294, "Ржаное поле")
+     li.promo__item.promo__item-experience
+      p.promo__number 167
+      p.promo__text лет опыта <br> на рынке хлебопечения
+     li.promo__item.promo__item-field
+      +pictureVp2("content", "field", "jpg", 396, 294, 565, 294, "Ржаное поле")
       p.promo__text 25+ лет в России
-     li.promo__item
-      +picture("content", "branch", 565, 294, "Ржаное поле")
+     li.promo__item.promo__item-branch
+      +pictureVp2("content", "branch", "jpg", 454, 294, 565, 294, "Ржаное поле")
       p.promo__text Филиалы в 50 странах
-     li.promo__item
-      span.promo__number 4
+     li.promo__item.promo__item-number
+      p.promo__number 4
       p.promo__text направления деятельности
+   .promo__navigation.slider__navigation
+     button(type="button", aria-label="Пролистать назад").promo__button.promo__button-prev.slider__button.slider__button-prev
+      +icon("icon-arrow", 10, 10)
+     button(type="button", aria-label="Пролистать вперёд").promo__button.promo__button-next.slider__button.slider__button-next
+      +icon("icon-arrow", 10, 10)
+   .promo__pagination.slider__pagination

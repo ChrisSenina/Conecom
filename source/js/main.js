@@ -5,7 +5,7 @@ import {CustomSelect} from './modules/select/custom-select';
 import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 import {findVideos} from './modules/video.js';
 import {playAccordion} from './modules/accordion.js';
-import {initSlider} from './modules/slider.js';
+import {initSliderAdv, initSliderPromo} from './modules/slider.js';
 
 // ---------------------------------
 
@@ -32,7 +32,8 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     findVideos();
     playAccordion();
-    initSlider();
+    initSliderAdv();
+    initSliderPromo();
   });
 });
 
