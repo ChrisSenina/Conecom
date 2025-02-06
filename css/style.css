@@ -2149,6 +2149,13 @@ button,
   }
 }
 
+@media (min-width: 360px) {
+  .promo__item-field img,
+  .promo__item-branch img {
+    height: 100%;
+  }
+}
+
 @media (min-width: 370px) {
   .advantages__heading {
     font-size: 14px;
@@ -2993,12 +3000,5 @@ button,
 
   .advantages__toggle:hover:not(.focus-visible) {
     opacity: 0.7;
-  }
-}
-
-@media (min-height: 360px) {
-  .promo__item-field img,
-  .promo__item-branch img {
-    height: 100%;
   }
 }
