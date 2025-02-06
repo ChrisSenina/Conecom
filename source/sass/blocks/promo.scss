@@ -73,7 +73,6 @@
           );
         width: 106px;
         height: 95px;
-        right: 0;
         top: 82%;
       }
     }
@@ -174,7 +173,7 @@
       }
 
       @include vp-XS {
-        max-height: 430px;
+        max-height: 370px;
         object-fit: cover;
         width: 100%;
       }
@@ -184,7 +183,8 @@
   &__item-field img,
   &__item-branch img {
     @include vp-XS {
-      max-height: 376px;
+      max-height: 315px;
+      height: 100%;
     }
   }
 

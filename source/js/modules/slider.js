@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import {Navigation, Pagination} from 'swiper/modules';
 
 export function initSliderAdv() {
   const slider = document.querySelector('.advantages__slider');
