@@ -140,6 +140,11 @@
       font-size: 14px;
       min-height: 84px;
     }
+
+    @media (min-width: 1020px) {
+      font-size: 18px;
+      min-height: unset;
+    }
   }
 
   &__toggle {
