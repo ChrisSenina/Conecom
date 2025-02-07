@@ -1942,6 +1942,7 @@ button,
   position: absolute;
   background: rgba(255, 255, 255, 0);
   border: none;
+  cursor: pointer;
 }
 
 .navigation__button-prev {
@@ -2355,6 +2356,7 @@ button,
   .promo__item-employees,
   .promo__item-branch {
     max-width: 454px;
+    margin: 0;
   }
 
   .promo__item-experience {
@@ -2678,6 +2680,8 @@ button,
   .promo__item {
     max-width: 100%;
     margin: 0;
+    cursor: -webkit-grab;
+    cursor: grab;
   }
 
   .promo__item img {
